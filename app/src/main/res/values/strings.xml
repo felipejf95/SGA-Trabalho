@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Trabalho</string>
+    <string name="title_activity_tela_perfil_edicao">TelaPerfilEdicaoActivity</string>
 </resources>
