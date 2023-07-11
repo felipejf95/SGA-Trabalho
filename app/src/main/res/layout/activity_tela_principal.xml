@@ -5,7 +5,7 @@
     android:id="@+id/txtBemVindo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0027FF"
+    android:background="#4462FE"
     tools:context=".TelaPrincipal">
 
     <TextView
@@ -28,19 +28,25 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="35dp"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Gerar Grade Curricular"
         app:layout_constraintBottom_toTopOf="@+id/btnConsultar"
-        app:layout_constraintEnd_toEndOf="@+id/btnConsultar" />
+        app:layout_constraintEnd_toEndOf="@+id/btnConsultar"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/btnConsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Consultar Disciplinas Cursadas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/btnAtividades"
@@ -48,9 +54,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="4dp"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Atividades Extra-Curriculares"
         app:layout_constraintEnd_toEndOf="@+id/btnConsultar"
-        app:layout_constraintTop_toBottomOf="@+id/btnConsultar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultar"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
 
     <ImageButton
         android:id="@+id/btnPerfil"
@@ -60,6 +69,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"

@@ -11,10 +11,10 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="159dp"
-        android:layout_marginEnd="166dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="157dp"
         android:layout_marginBottom="10dp"
         android:text="Disciplinas"
         android:textColor="#FFFFFF"
@@ -29,26 +29,24 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="11dp"
         android:text="Atividades extras curriculares"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/chartContainer1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chartContainer" />
+        app:layout_constraintStart_toStartOf="@+id/chartContainer1"
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltar" />
 
     <LinearLayout
         android:id="@+id/chartContainer"
-        android:layout_width="413dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="34dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,14 +65,13 @@
 
     <LinearLayout
         android:id="@+id/chartContainer1"
-        android:layout_width="413dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="52dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="MissingConstraints">
@@ -86,6 +83,22 @@
             android:layout_width="match_parent"
             android:layout_height="300dp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="371dp"
+        android:text="Voltar"
+        app:backgroundTint="?android:attr/windowSplashScreenBackground"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="1dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

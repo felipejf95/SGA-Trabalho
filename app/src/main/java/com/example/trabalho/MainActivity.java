@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Lógica para abrir a Activity desejada
-                Intent intent = new Intent(MainActivity.this, ProgressoDisciplinasActivity.class);
+                Intent intent = new Intent(MainActivity.this, TelaPrincipal.class);
                 startActivity(intent);
             }
         });

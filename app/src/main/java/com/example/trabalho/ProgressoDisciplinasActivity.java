@@ -2,8 +2,11 @@ package com.example.trabalho;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
@@ -31,7 +34,18 @@ public class ProgressoDisciplinasActivity extends AppCompatActivity {
         createBarChatt();
         createLinearChart1();
 
+
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button btnFechar = findViewById(R.id.btnVoltar);
+        btnFechar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Fechar a Activity
+                finish();
+            }
+        });
+
     }
+
 
     void createBarChatt() {
 // ...
