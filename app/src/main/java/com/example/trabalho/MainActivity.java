@@ -7,8 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
+
+    boolean isAluno = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +24,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Lógica para abrir a Activity desejada
-                Intent intent = new Intent(MainActivity.this, TelaPerfilVisualizacaoActivity.class);
+                Intent intent = null;
+                if(isAluno)
+                 intent = new Intent(MainActivity.this,
+                        TelaPrincipalAlunoActivity.class);
+                else{
+                    intent = new Intent(MainActivity.this,
+                            TelaPrincipalAdmActivity.class);
+                }
+
+              if(Objects.nonNull(intent))
                 startActivity(intent);
             }
         });

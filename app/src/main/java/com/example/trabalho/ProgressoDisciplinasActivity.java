@@ -35,13 +35,9 @@ public class ProgressoDisciplinasActivity extends AppCompatActivity {
         createLinearChart1();
 
 
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button btnFechar = findViewById(R.id.btnVoltar);
-        btnFechar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Fechar a Activity
-                finish();
-            }
+        Button btnFechar = findViewById(R.id.btnVoltar);
+        btnFechar.setOnClickListener(v -> {
+            finish();
         });
 
     }

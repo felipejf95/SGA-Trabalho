@@ -48,8 +48,8 @@
         android:layout_marginTop="42dp"
         android:layout_marginBottom="42dp"
         android:width="300dp"
-        android:ems="10"
         android:editable="false"
+        android:ems="10"
         android:freezesText="true"
         android:inputType="none"
         android:text="201535026"
@@ -89,8 +89,8 @@
         android:width="300dp"
         android:editable="false"
         android:freezesText="true"
-        android:inputType="none"
         android:gravity="start|top"
+        android:inputType="none"
         android:singleLine="false"
         android:text="Rua Omar baptista de oliviera"
         android:textAllCaps="true"
@@ -245,12 +245,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
+        android:layout_marginTop="47dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Voltar"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBairro"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="611dp" />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
