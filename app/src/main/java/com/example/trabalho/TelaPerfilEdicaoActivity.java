@@ -89,6 +89,21 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
 
             Usuario usr = meuDAO.buscarModeloPorMatricula(String.valueOf(edtMatricula.getText()));
 
+            edtNome.setText(usr.getNome().trim());
+            edtMatricula.setText(usr.getMatricula().trim());
+            edtemail.setText(usr.getEmail().trim());
+            edtCurso.setText(usr.getCurso().trim());
+            edtTelefone.setText(usr.getTelefone().trim());
+            edtDataInicioCurso.setText(usr.getDadaInicioCurso().trim());
+            edtDataNascimento.setText(usr.getDataNascimento().trim());
+            edtCep.setText(usr.getCep().trim());
+            edtUF.setText(usr.getUf().trim());
+            edtLogradouro.setText(usr.getLogradouro().trim());
+            edtBairro.setText(usr.getBairro().trim());
+            edtCidade.setText(usr.getCidade().trim());
+            edtSenha.setText(usr.getSenha().trim());
+            edtSenha1.setText(usr.getSenha().trim());
+
         }
 
 
@@ -102,25 +117,25 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
 
         Button btnSalvar = findViewById(R.id.btnSalvar);
         btnSalvar.setOnClickListener(v -> {
-                //if(edtSenha.getText().equals(edtSenha1.getText()) && !String.valueOf(edtMatricula.getText()).isEmpty()){
+                if(edtSenha.getText().equals(edtSenha1.getText().toString().trim()) && !String.valueOf(edtMatricula.getText().toString().trim()).isEmpty()){
 
                     boolean isSalvou = false;
                     try {
                         meuDAO.abrirBanco();
                         Usuario usr = new Usuario.Builder()
-                                                .matricula(String.valueOf(edtMatricula.getText()))
-                                                .nome((String.valueOf(edtNome.getText())))
-                                                .email(String.valueOf(edtemail.getText()))
-                                                .telefone(String.valueOf(edtTelefone.getText()))
-                                                .curso(String.valueOf(edtCurso.getText()))
-                                                .dataInicioCurso(String.valueOf(edtDataInicioCurso.getText()))
-                                                .dataNascimento(String.valueOf(edtDataNascimento.getText()))
-                                                .cep(String.valueOf(edtCep.getText()))
-                                                .uf(String.valueOf(edtUF.getText()))
-                                                .logradouro(String.valueOf(edtLogradouro.getText()))
-                                                .bairro(String.valueOf(edtBairro.getText()))
-                                                .cidade(String.valueOf(edtCidade.getText()))
-                                                .senha(String.valueOf(edtSenha.getText()))
+                                                .matricula(edtMatricula.getText().toString().trim())
+                                                .nome(edtNome.getText().toString().trim())
+                                                .email(String.valueOf(edtemail.getText().toString().trim()))
+                                                .telefone(String.valueOf(edtTelefone.getText().toString().trim()))
+                                                .curso(String.valueOf(edtCurso.getText().toString().trim()))
+                                                .dataInicioCurso(String.valueOf(edtDataInicioCurso.getText().toString().trim()))
+                                                .dataNascimento(String.valueOf(edtDataNascimento.getText().toString().trim()))
+                                                .cep(String.valueOf(edtCep.getText().toString().trim()))
+                                                .uf(String.valueOf(edtUF.getText().toString().trim()))
+                                                .logradouro(String.valueOf(edtLogradouro.getText().toString().trim()))
+                                                .bairro(String.valueOf(edtBairro.getText().toString().trim()))
+                                                .cidade(String.valueOf(edtCidade.getText().toString().trim()))
+                                                .senha(String.valueOf(edtSenha.getText().toString().trim()))
                                                 .isAluno(1)
                                                 .build();
 
@@ -136,7 +151,7 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
                     if(isSalvou)
                         finish();
 
-             //   }
+                }
         });
     }
 }

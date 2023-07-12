@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class TelaPrincipalAlunoActivity extends AppCompatActivity {
 
-    Intent intent = getIntent();
+    Intent intent;
     String matricula;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

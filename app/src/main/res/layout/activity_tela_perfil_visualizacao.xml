@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtLogradouro" />
 
     <EditText
-        android:id="@+id/edtNome"
+        android:id="@+id/edtMatricula"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_marginTop="42dp"
@@ -60,7 +60,8 @@
         android:tooltipText="Nome"
         app:layout_constraintBottom_toBottomOf="@+id/edtemail"
         app:layout_constraintStart_toStartOf="@+id/edtNome"
-        app:layout_constraintTop_toTopOf="@+id/edtNome" />
+        app:layout_constraintTop_toTopOf="@+id/edtNome"
+        tools:ignore="NotSibling" />
 
     <EditText
         android:id="@+id/edtBairro"
