@@ -22,7 +22,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="215dp" />
+        tools:layout_editor_absoluteY="215dp"
+        tools:text="60" />
 
     <EditText
         android:id="@+id/editDataAddExtra"
@@ -39,7 +40,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteY="276dp"
+        tools:text="2022.1" />
 
     <Button
         android:id="@+id/btnVoltar8"
@@ -68,7 +70,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="154dp" />
+        tools:layout_editor_absoluteY="154dp"
+        tools:text="Monitoria DCC025" />
 
     <Button
         android:id="@+id/btnAddExtra"

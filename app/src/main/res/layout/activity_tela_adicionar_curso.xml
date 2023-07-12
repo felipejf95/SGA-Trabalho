@@ -22,7 +22,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="310dp" />
+        tools:layout_editor_absoluteY="297dp"
+        tools:text="Nenhum" />
 
     <EditText
         android:id="@+id/editCargaAddCurso"
@@ -39,7 +40,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="239dp" />
+        tools:layout_editor_absoluteY="239dp"
+        tools:text="60" />
 
     <EditText
         android:id="@+id/editDescricaoAddCurso"
@@ -56,7 +58,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="178dp" />
+        tools:layout_editor_absoluteY="178dp"
+        tools:text="Monitoria DCC025" />
 
     <EditText
         android:id="@+id/editCodigoAddCurso"
@@ -73,7 +76,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="120dp" />
+        tools:layout_editor_absoluteY="120dp"
+        tools:text="001" />
 
     <Button
         android:id="@+id/btnAddCurso"

@@ -11,6 +11,7 @@
         android:id="@+id/editVagasAddDisciplina"
         android:layout_width="319dp"
         android:layout_height="42dp"
+        android:alpha="40"
         android:ems="10"
         android:hint="Número de Vagas"
         android:inputType="textMultiLine"
@@ -39,7 +40,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="141dp" />
+        tools:layout_editor_absoluteY="141dp"
+        tools:text="Sistemas de Informação" />
 
     <Button
         android:id="@+id/btnVoltar7"
@@ -68,7 +70,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="196dp" />
+        tools:layout_editor_absoluteY="196dp"
+        tools:text="DCC196" />
 
     <EditText
         android:id="@+id/editDescricaoAddDisciplina"
@@ -85,7 +88,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="250dp" />
+        tools:layout_editor_absoluteY="250dp"
+        tools:text="Desenv. de Sistemas Web" />
 
     <EditText
         android:id="@+id/editPeriodoAddDisciplina"
@@ -102,7 +106,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="302dp" />
+        tools:layout_editor_absoluteY="302dp"
+        tools:text="2023.2" />
 
     <EditText
         android:id="@+id/editCargaAddDisciplina"
@@ -119,7 +124,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="357dp" />
+        tools:layout_editor_absoluteY="357dp"
+        tools:text="60" />
 
     <EditText
         android:id="@+id/editProfessorAddDisciplina"
@@ -136,7 +142,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="409dp" />
+        tools:layout_editor_absoluteY="409dp"
+        tools:text="Ronney Moreira" />
 
     <Button
         android:id="@+id/btnAddDisciplina"

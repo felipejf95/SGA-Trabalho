@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class TelaPrincipalAlunoActivity extends AppCompatActivity {
@@ -23,6 +22,12 @@ public class TelaPrincipalAlunoActivity extends AppCompatActivity {
         btnAtividades.setOnClickListener(v -> {
             intent = new Intent(TelaPrincipalAlunoActivity.this, ProgressoDisciplinasActivity.class);
             intent.putExtra("matricula", matricula);
+            startActivity(intent);
+        });
+
+        Button btnAlunoAddExtra = findViewById(R.id.btnAlunoAddExtra);
+        btnAlunoAddExtra.setOnClickListener(v -> {
+            intent = new Intent(TelaPrincipalAlunoActivity.this, ProgressoDisciplinasActivity.class);
             startActivity(intent);
         });
 
