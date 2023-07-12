@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+                }else{
+                    Toast.makeText(MainActivity.this, "Usuario ou senha incorretos!", Toast.LENGTH_LONG).show();
                 }
 
 

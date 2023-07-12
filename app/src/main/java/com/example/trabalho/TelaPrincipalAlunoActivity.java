@@ -34,6 +34,16 @@ public class TelaPrincipalAlunoActivity extends AppCompatActivity {
             intent.putExtra("matricula", matricula);
             startActivity(intent);
         });
+
+
+        Button btnSair = findViewById(R.id.btnSair);
+        btnSair.setOnClickListener(v -> {
+            // Lógica para abrir a Activity desejada
+            finish();
+            intent = new Intent(TelaPrincipalAlunoActivity.this, MainActivity.class);
+            intent.putExtra("matricula", matricula);
+            startActivity(intent);
+        });
     }
 
 

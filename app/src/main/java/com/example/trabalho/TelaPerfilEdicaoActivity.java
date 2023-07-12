@@ -138,7 +138,7 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
                                                 .logradouro(String.valueOf(edtLogradouro.getText().toString().trim()))
                                                 .bairro(String.valueOf(edtBairro.getText().toString().trim()))
                                                 .cidade(String.valueOf(edtCidade.getText().toString().trim()))
-                                                .senha(String.valueOf(edtSenha.getText().toString().trim()))
+                                                .senha(edtSenha.getText().toString().trim())
                                                 .isAluno(1)
                                                 .build();
 
