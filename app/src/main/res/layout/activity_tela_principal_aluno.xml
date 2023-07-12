@@ -17,19 +17,19 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdmAddCurso"
+        app:layout_constraintBottom_toTopOf="@+id/btnGerarGrade"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnAdmAddCurso"
+        android:id="@+id/btnGerarGrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Gerar Grade Completa"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdmAddDisciplina"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPerfil"
@@ -37,37 +37,37 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btnAdmAddDisciplina"
+        android:id="@+id/btnConsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Gerar grade proximo periodo"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAlunoAddExtra"
-        app:layout_constraintEnd_toEndOf="@+id/btnAdmAddCurso"
-        app:layout_constraintStart_toStartOf="@+id/btnAdmAddCurso"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdmAddCurso"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtividades"
+        app:layout_constraintEnd_toEndOf="@+id/btnGerarGrade"
+        app:layout_constraintStart_toStartOf="@+id/btnGerarGrade"
+        app:layout_constraintTop_toBottomOf="@+id/btnGerarGrade"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btnAlunoAddExtra"
+        android:id="@+id/btnAtividades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Cadastrar Atividades"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAtividades"
-        app:layout_constraintEnd_toEndOf="@+id/btnAdmAddDisciplina"
-        app:layout_constraintStart_toStartOf="@+id/btnAdmAddDisciplina"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdmAddDisciplina"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtividades2"
+        app:layout_constraintEnd_toEndOf="@+id/btnConsultar"
+        app:layout_constraintStart_toStartOf="@+id/btnConsultar"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultar"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btnAtividades"
+        android:id="@+id/btnAtividades2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="405dp"
@@ -76,9 +76,9 @@
         android:text="Consultar Atividades"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnAlunoAddExtra"
-        app:layout_constraintStart_toStartOf="@+id/btnAlunoAddExtra"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlunoAddExtra"
+        app:layout_constraintEnd_toEndOf="@+id/btnAtividades"
+        app:layout_constraintStart_toStartOf="@+id/btnAtividades"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtividades"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
@@ -90,7 +90,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="146dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdmAddCurso"
+        app:layout_constraintBottom_toTopOf="@+id/btnGerarGrade"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -99,13 +99,12 @@
         android:id="@+id/btnPerfilAluno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="57dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Perfil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAtividades"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtividades2"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 

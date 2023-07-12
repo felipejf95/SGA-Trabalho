@@ -69,7 +69,7 @@ public class UsuarioDAO {
     public Usuario buscarModeloPorMatricula(String matricula ) {
         Usuario modelo = null;
 
-        Cursor cursor = database.query(String.valueOf(TabelasEnum.USUARIO_TB), null, "matricula = ?", new String[]{String.valueOf(matricula)}, null, null, null);
+        Cursor cursor = database.query("usuario_tb", null, "matricula = ?", new String[]{String.valueOf(matricula)}, null, null, null);
         if (cursor != null && cursor.moveToFirst()) {
             modelo = Usuario.buildCursor(cursor);
             cursor.close();

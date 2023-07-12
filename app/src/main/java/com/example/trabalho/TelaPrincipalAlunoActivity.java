@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class TelaPrincipalAlunoActivity extends AppCompatActivity {
 
-    Intent intent = getIntent();
+    Intent intent;
     String matricula;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,16 @@ public class TelaPrincipalAlunoActivity extends AppCompatActivity {
         btnPerfil.setOnClickListener(v -> {
             // Lógica para abrir a Activity desejada
             intent = new Intent(TelaPrincipalAlunoActivity.this, TelaPerfilVisualizacaoActivity.class);
+            intent.putExtra("matricula", matricula);
+            startActivity(intent);
+        });
+
+
+        Button btnSair = findViewById(R.id.btnSair);
+        btnSair.setOnClickListener(v -> {
+            // Lógica para abrir a Activity desejada
+            finish();
+            intent = new Intent(TelaPrincipalAlunoActivity.this, MainActivity.class);
             intent.putExtra("matricula", matricula);
             startActivity(intent);
         });

@@ -90,12 +90,14 @@ public class MainActivity extends AppCompatActivity {
 
 
                     if(Objects.nonNull(intent)){
-                        intent.putExtra("matricula", edtLogin.getText());
+                        intent.putExtra("matricula", edtLogin.getText().toString().trim());
                         startActivity(intent);
                     }
 
 
 
+                }else{
+                    Toast.makeText(MainActivity.this, "Usuario ou senha incorretos!", Toast.LENGTH_LONG).show();
                 }
 
 
