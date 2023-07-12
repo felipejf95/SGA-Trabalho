@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4462FE"
+    tools:context=".TelaCriarDisciplinaActivity">
+
+    <EditText
+        android:id="@+id/editVagasAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Número de Vagas"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <EditText
+        android:id="@+id/editCursoAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Curso"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <Button
+        android:id="@+id/btnVoltar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:text="Voltar"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="531dp" />
+
+    <EditText
+        android:id="@+id/editCodigoAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Código"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <EditText
+        android:id="@+id/editDescricaoAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <EditText
+        android:id="@+id/editPeriodoAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Período"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <EditText
+        android:id="@+id/editCargaAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Carga Horária"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <EditText
+        android:id="@+id/editProfessorAddDisciplina"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Professor"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:id="@+id/btnAddDisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:text="Criar"
+        android:textColorHint="?android:attr/windowSplashScreenBackground"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="531dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

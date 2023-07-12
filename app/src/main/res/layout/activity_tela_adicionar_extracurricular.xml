@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4462FE"
+    tools:context=".TelaAdicionarExtracurricularActivity">
+
+    <EditText
+        android:id="@+id/editCargaAddExtra"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Carga Horária"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <EditText
+        android:id="@+id/editDataAddExtra"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Data de Conclusão"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:id="@+id/btnVoltar8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:text="Voltar"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <EditText
+        android:id="@+id/editNomeAddExtra"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Nome da Atividade/Curso"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <Button
+        android:id="@+id/btnAddExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:text="Adicionar"
+        android:textColorHint="?android:attr/windowSplashScreenBackground"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="341dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

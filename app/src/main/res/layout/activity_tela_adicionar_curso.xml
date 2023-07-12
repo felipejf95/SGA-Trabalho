@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4462FE"
+    tools:context=".TelaAdicionarCursoActivity">
+
+    <EditText
+        android:id="@+id/editRequisitosAddCurso"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Pré-Requisitos"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <EditText
+        android:id="@+id/editCargaAddCurso"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Carga Horária"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/editDescricaoAddCurso"
+        android:layout_width="319dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <EditText
+        android:id="@+id/editCodigoAddCurso"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Código"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/btnAddCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:text="Adicionar"
+        android:textColorHint="?android:attr/windowSplashScreenBackground"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <Button
+        android:id="@+id/btnVoltar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/windowSplashScreenBackground"
+        android:text="Voltar"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="391dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
