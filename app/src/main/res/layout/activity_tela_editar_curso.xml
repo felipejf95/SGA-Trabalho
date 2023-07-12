@@ -8,7 +8,7 @@
     tools:context=".TelaEditarCursoActivity">
 
     <Button
-        android:id="@+id/editCodigoEditCurso"
+        android:id="@+id/btnVoltar6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"

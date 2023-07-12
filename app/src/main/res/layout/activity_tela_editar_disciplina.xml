@@ -35,7 +35,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="479dp" />
+        tools:layout_editor_absoluteY="479dp"
+        tools:text="45" />
 
     <EditText
         android:id="@+id/editCursoEditDisciplina"
@@ -52,7 +53,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="154dp" />
+        tools:layout_editor_absoluteY="154dp"
+        tools:text="Sistemas de Informação" />
 
     <Button
         android:id="@+id/btnVoltar5"
@@ -81,7 +83,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="427dp" />
+        tools:layout_editor_absoluteY="427dp"
+        tools:text="Ronney Moreira" />
 
     <EditText
         android:id="@+id/editCargaEditDisciplina"
@@ -98,7 +101,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="373dp" />
+        tools:layout_editor_absoluteY="373dp"
+        tools:text="60" />
 
     <EditText
         android:id="@+id/editPeriodoEditDisciplina"
@@ -115,7 +119,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="318dp" />
+        tools:layout_editor_absoluteY="318dp"
+        tools:text="2023.2" />
 
     <EditText
         android:id="@+id/editCodEditDisciplina"
@@ -132,7 +137,8 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="208dp" />
+        tools:layout_editor_absoluteY="208dp"
+        tools:text="DCC196" />
 
     <EditText
         android:id="@+id/editDescicaoEditDisciplina"
@@ -149,5 +155,6 @@
         android:tooltipText="Nome"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="262dp" />
+        tools:layout_editor_absoluteY="262dp"
+        tools:text="Desenv. de Sistemas Web" />
 </androidx.constraintlayout.widget.ConstraintLayout>

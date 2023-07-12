@@ -12,26 +12,27 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
+        android:layout_marginTop="43dp"
         android:text="Bem-vindo Aluno"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnGerarGrade"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnGerarGrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="55dp"
         android:width="300dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Gerar Grade Completa"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FFFFFF"
         app:strokeWidth="2dp" />
@@ -50,7 +51,7 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btnAtividades"
+        android:id="@+id/btnAlunoAddExtra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
@@ -63,25 +64,25 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/btnAtividades2"
+        android:id="@+id/btnAtividades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Consultar Atividades"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toStartOf="@+id/btnAtividades"
-        app:layout_constraintTop_toBottomOf="@+id/btnAtividades"
+        app:layout_constraintStart_toStartOf="@+id/btnAlunoAddExtra"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlunoAddExtra"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
     <ImageButton
         android:id="@+id/btnPerfil"
-        android:layout_width="40dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/btnGerarGrade"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -90,25 +91,24 @@
         android:id="@+id/btnPerfilAluno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="58dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Perfil"
-        app:layout_constraintStart_toEndOf="@+id/btnSair"
-        app:layout_constraintTop_toBottomOf="@+id/btnAtividades2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtividades"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/btnSair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
+        android:layout_width="94dp"
+        android:layout_height="41dp"
         android:backgroundTint="?android:attr/windowSplashScreenBackground"
         android:text="Sair"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnPerfilAluno"
-        app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp" />
+        app:strokeWidth="2dp"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
