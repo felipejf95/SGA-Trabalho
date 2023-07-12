@@ -60,7 +60,7 @@ public class UsuarioDAO {
     public void atualizarModelo(Usuario modelo) {
         ContentValues values = modelo.getContentValues();
         String whereClause = "matricula = ?";
-        String[] whereArgs = {String.valueOf(modelo.getMatricula())};
+        String[] whereArgs = {String.valueOf(modelo.getMatricula().toString().trim())};
         database.update(TabelasEnum.USUARIO_TB.getNomeTabela(), values, whereClause, whereArgs);
     }
 

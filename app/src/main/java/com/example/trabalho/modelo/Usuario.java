@@ -191,7 +191,7 @@ public class Usuario {
                 Usuario  usr = new Usuario();
 
 
-                usr.setNome(cursor.getString(cursor.getColumnIndex("nome")));
+                usr.setNome(cursor.getString(cursor.getColumnIndex("nome")).trim());
                 usr.setMatricula(cursor.getString(cursor.getColumnIndex("matricula")));
                 usr.setEmail(cursor.getString(cursor.getColumnIndex("email")));
                 usr.setTelefone(cursor.getString(cursor.getColumnIndex("telefone")));
@@ -203,7 +203,7 @@ public class Usuario {
                 usr.setLogradouro(cursor.getString(cursor.getColumnIndex("logradouro")));
                 usr.setBairro(cursor.getString(cursor.getColumnIndex("bairro")));
                 usr.setCidade(cursor.getString(cursor.getColumnIndex("cidade")));
-                usr.setSenha(String.valueOf(cursor.getColumnIndex("senha")));
+                usr.setSenha(String.valueOf(cursor.getColumnIndex("senha")).trim());
                 usr.setAluno(cursor.getColumnIndex("isAluno"));
 
 

@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="296dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Matricula"
         android:inputType="text"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
