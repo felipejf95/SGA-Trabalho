@@ -39,7 +39,7 @@
         android:tooltipText="Nome"
         app:layout_constraintEnd_toEndOf="@+id/edtUF"
         app:layout_constraintStart_toEndOf="@+id/edtBairro"
-        app:layout_constraintTop_toBottomOf="@+id/edtCurso3" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLogradouro" />
 
     <EditText
         android:id="@+id/edtNome"
@@ -82,7 +82,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/edtCurso3"
+        android:id="@+id/edtLogradouro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
@@ -118,8 +118,8 @@
         android:textColorLink="@color/white"
         android:tooltipText="CEP"
         app:layout_constraintBaseline_toBaselineOf="@+id/edtUF"
-        app:layout_constraintEnd_toEndOf="@+id/edtAnoSemestre"
-        app:layout_constraintStart_toEndOf="@+id/edtAnoSemestre"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataInicioCurso"
+        app:layout_constraintStart_toEndOf="@+id/edtDataInicioCurso"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -138,11 +138,11 @@
         android:textColorLink="@color/white"
         android:tooltipText="Matricula"
         app:layout_constraintStart_toEndOf="@+id/edtCep"
-        app:layout_constraintTop_toBottomOf="@+id/edtAno"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/edtAnoSemestre"
+        android:id="@+id/edtDataInicioCurso"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:width="100dp"
@@ -155,11 +155,11 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Ano Semestre"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edtAno"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtDataNascimento"
         app:layout_constraintStart_toStartOf="@+id/edtCurso" />
 
     <EditText
-        android:id="@+id/edtAno"
+        android:id="@+id/edtDataNascimento"
         android:layout_width="200dp"
         android:layout_height="46dp"
         android:width="200dp"
@@ -193,7 +193,7 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Curso"
-        app:layout_constraintBottom_toTopOf="@+id/edtAnoSemestre"
+        app:layout_constraintBottom_toTopOf="@+id/edtDataInicioCurso"
         app:layout_constraintStart_toStartOf="@+id/edtemail" />
 
     <EditText

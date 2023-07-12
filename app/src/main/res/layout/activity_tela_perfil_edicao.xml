@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edtSenha2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4462FE"
     tools:context=".TelaPerfilEdicaoActivity">
-
 
 
     <TextView
@@ -27,7 +27,8 @@
         android:id="@+id/edtCidade"
         android:layout_width="0dp"
         android:layout_height="43dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="53dp"
         android:width="150dp"
         android:ems="10"
         android:inputType="textMultiLine"
@@ -38,16 +39,54 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Nome"
+        app:layout_constraintBottom_toBottomOf="@+id/edtSenha"
         app:layout_constraintEnd_toEndOf="@+id/edtUF"
         app:layout_constraintStart_toEndOf="@+id/edtBairro"
-        app:layout_constraintTop_toBottomOf="@+id/edtCurso3" />
+        app:layout_constraintTop_toTopOf="@+id/edtLogradouro" />
 
     <EditText
-        android:id="@+id/edtNome"
+        android:id="@+id/edtSenha"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:width="150dp"
+        android:ems="10"
+        android:inputType="text|textPassword|textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Senha"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtSenha1"
+        app:layout_constraintEnd_toEndOf="@+id/edtBairro"
+        app:layout_constraintStart_toStartOf="@+id/edtBairro" />
+
+    <EditText
+        android:id="@+id/edtSenha1"
+        android:layout_width="142dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginBottom="145dp"
+        android:width="150dp"
+        android:ems="10"
+        android:inputType="text|textPassword|textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSalvar"
+        app:layout_constraintStart_toEndOf="@+id/edtSenha"
+        app:layout_constraintTop_toTopOf="@+id/edtCep" />
+
+    <EditText
+        android:id="@+id/edtMatricula"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="42dp"
         android:width="300dp"
         android:ems="10"
         android:gravity="start|top"
@@ -62,6 +101,27 @@
         app:layout_constraintBottom_toBottomOf="@+id/edtemail"
         app:layout_constraintStart_toStartOf="@+id/edtNome"
         app:layout_constraintTop_toTopOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="95dp"
+        android:width="300dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:text="32214476"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:tooltipText="Nome"
+        app:layout_constraintBottom_toBottomOf="@+id/edtDataInicioCurso"
+        app:layout_constraintStart_toStartOf="@+id/edtemail"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
 
     <EditText
         android:id="@+id/edtBairro"
@@ -83,7 +143,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/edtCurso3"
+        android:id="@+id/edtLogradouro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
@@ -118,8 +178,8 @@
         android:textColorLink="@color/white"
         android:tooltipText="CEP"
         app:layout_constraintBaseline_toBaselineOf="@+id/edtUF"
-        app:layout_constraintEnd_toEndOf="@+id/edtAnoSemestre"
-        app:layout_constraintStart_toEndOf="@+id/edtAnoSemestre"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataInicioCurso"
+        app:layout_constraintStart_toEndOf="@+id/edtDataInicioCurso"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -137,11 +197,11 @@
         android:textColorLink="@color/white"
         android:tooltipText="Matricula"
         app:layout_constraintStart_toEndOf="@+id/edtCep"
-        app:layout_constraintTop_toBottomOf="@+id/edtAno"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/edtAnoSemestre"
+        android:id="@+id/edtDataInicioCurso"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:width="100dp"
@@ -152,12 +212,11 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Ano Semestre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/edtCurso"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtDataNascimento"
+        app:layout_constraintStart_toStartOf="@+id/edtCurso" />
 
     <EditText
-        android:id="@+id/edtAno"
+        android:id="@+id/edtDataNascimento"
         android:layout_width="200dp"
         android:layout_height="46dp"
         android:width="200dp"
@@ -180,8 +239,8 @@
         android:id="@+id/edtCurso"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginBottom="91dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="140dp"
         android:width="300dp"
         android:ems="10"
         android:inputType="text"
@@ -192,16 +251,16 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Curso"
-        app:layout_constraintBottom_toBottomOf="@+id/edtCep"
-        app:layout_constraintStart_toStartOf="@+id/edtemail"
-        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+        app:layout_constraintBottom_toTopOf="@+id/edtBairro"
+        app:layout_constraintStart_toStartOf="@+id/edtTelefone"
+        app:layout_constraintTop_toTopOf="@+id/edtMatricula" />
 
     <EditText
         android:id="@+id/edtemail"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="49dp"
         android:width="300dp"
         android:ems="10"
         android:inputType="text"
@@ -212,8 +271,8 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Email"
-        app:layout_constraintBottom_toBottomOf="@+id/edtCurso"
-        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTelefone"
+        app:layout_constraintStart_toStartOf="@+id/edtMatricula"
         app:layout_constraintTop_toBottomOf="@+id/edtNome" />
 
     <EditText
@@ -221,9 +280,8 @@
         android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="157dp"
         android:layout_marginEnd="46dp"
-        android:layout_marginBottom="175dp"
         android:ems="10"
         android:inputType="textMultiLine"
         android:singleLine="false"
@@ -233,10 +291,9 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="@color/white"
         android:tooltipText="Nome"
-        app:layout_constraintBottom_toBottomOf="@+id/edtAnoSemestre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtPerfil"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="DuplicateIds,MissingConstraints"
         tools:text="Douglas da silva" />
 
