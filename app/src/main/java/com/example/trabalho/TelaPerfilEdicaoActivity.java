@@ -2,6 +2,7 @@ package com.example.trabalho;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -53,6 +54,8 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tela_perfil_edicao);
 
         isCadastro = Boolean.valueOf(getIntent().getBooleanExtra("isCadastro",false));
+        String matricula = getIntent().getStringExtra("matricula");
+
         meuDAO = new UsuarioDAO(this);
 
         edtNome = findViewById(R.id.edtNome);
@@ -86,9 +89,9 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
             edtCidade.setText("");
 
         }else {
-
-            Usuario usr = meuDAO.buscarModeloPorMatricula(String.valueOf(edtMatricula.getText()));
-
+            meuDAO.abrirBanco();
+            Usuario usr = meuDAO.buscarModeloPorMatricula(matricula.trim());
+            meuDAO.fecharBanco();
             edtNome.setText(usr.getNome().trim());
             edtMatricula.setText(usr.getMatricula().trim());
             edtemail.setText(usr.getEmail().trim());
@@ -117,7 +120,7 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
 
         Button btnSalvar = findViewById(R.id.btnSalvar);
         btnSalvar.setOnClickListener(v -> {
-                if(edtSenha.getText().equals(edtSenha1.getText().toString().trim()) && !String.valueOf(edtMatricula.getText().toString().trim()).isEmpty()){
+                if(edtSenha.getText().toString().trim().equals(edtSenha1.getText().toString().trim()) && !String.valueOf(edtMatricula.getText().toString().trim()).isEmpty()){
 
                     boolean isSalvou = false;
                     try {
@@ -148,10 +151,19 @@ public class TelaPerfilEdicaoActivity extends AppCompatActivity {
 
                     meuDAO.fecharBanco();
 
-                    if(isSalvou)
-                        finish();
+                    if(isSalvou){
+
+                        Intent intent = new Intent(TelaPerfilEdicaoActivity.this, TelaPerfilVisualizacaoActivity.class);
+                        intent.putExtra("matricula", matricula);
+                        startActivity(intent);
+
+                    }
+
 
                 }
         });
+
+
+
     }
 }

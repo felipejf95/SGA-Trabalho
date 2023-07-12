@@ -30,6 +30,7 @@ public class TelaPerfilVisualizacaoActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -87,7 +88,11 @@ public class TelaPerfilVisualizacaoActivity extends AppCompatActivity {
 
         Button btnFechar = findViewById(R.id.btnVoltar);
         btnFechar.setOnClickListener(v -> {
-            finish();
+
+            intent = new Intent(TelaPerfilVisualizacaoActivity.this, TelaPrincipalAlunoActivity.class);
+            intent.putExtra("matricula", matricula);
+            startActivity(intent);
+
         });
 
 
