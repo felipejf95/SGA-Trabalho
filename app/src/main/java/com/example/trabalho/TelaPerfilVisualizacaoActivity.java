@@ -2,6 +2,7 @@ package com.example.trabalho;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -16,6 +17,14 @@ public class TelaPerfilVisualizacaoActivity extends AppCompatActivity {
         Button btnFechar = findViewById(R.id.btnVoltar);
         btnFechar.setOnClickListener(v -> {
             finish();
+        });
+
+
+        Button btnEditarPerfil = findViewById(R.id.btnEditarPerfil);
+        btnEditarPerfil.setOnClickListener(v -> {
+            // Lógica para abrir a Activity desejada
+            Intent intent = new Intent(TelaPerfilVisualizacaoActivity.this, TelaPerfilEdicaoActivity.class);
+            startActivity(intent);
         });
 
 
